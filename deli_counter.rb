@@ -35,7 +35,7 @@ def take_a_number
   # The method should call out (puts) the person's name along with their position in line.
   # Top-Tip: Remember that people like to count from 1, not from 0 ("zero") like computers.
   katz_deli = line_argument
-  last_person_in_line = katz_deli(-1)
+  last_person_in_line = katz_deli[-1]
   new_person = last_person_in_line + 1
 
   katz_deli << new_person
