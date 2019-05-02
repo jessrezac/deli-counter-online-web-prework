@@ -1,11 +1,18 @@
 # Write your code here.
 require 'pry'
 
-katz_deli = []
 
-def line(katz_deli)
+# Instead of name, we will just take numbers
+# the current line is [112, 113]
+
+def line_argument
+  katz_deli = [112, 113]
+end
+
+def line
   ## Build the line method that shows everyone their current place in the line.
   # If there is nobody in line, it should say "The line is currently empty.".
+ katz_deli = line_argument
 
   if katz_deli.size > 0
     line_order = "The line is currently:"
@@ -20,7 +27,7 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, new_person)
+def take_a_number
   ## Build a method that a new customer will use when entering the deli.
   # The take_a_number method should accept two arguments,
   # the array for the current line of people (katz_deli),
@@ -34,7 +41,7 @@ def take_a_number(katz_deli, new_person)
 
 end
 
-def now_serving(katz_deli)
+def now_serving
   ## Build the now_serving method which should call out (i.e. puts)
   # the next person in line and then remove them from the front.
   # If there is nobody in line, it should call out (puts)
